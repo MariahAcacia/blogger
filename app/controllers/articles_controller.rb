@@ -1,3 +1,4 @@
+# http://tutorials.jumpstartlab.com/projects/blogger.html
 class ArticlesController < ApplicationController
 
 include ArticlesHelper
@@ -8,6 +9,8 @@ include ArticlesHelper
 
   def show
     @article = Article.find(params[:id])
+    @comment = Comment.new
+    @comment.article_id = @article.id
   end
 
   def new
