@@ -41,7 +41,7 @@ gem 'sorcery'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  gem 'byebug', '~> 10.0.2 ', platform: :mri
 end
 
 group :development do
